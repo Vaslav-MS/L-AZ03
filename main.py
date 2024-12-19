@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 1
+# Задание 1
 
 mean = 0  # Среднее значение
 std_dev = 1  # Стандартное отклонение
@@ -15,7 +15,7 @@ plt.ylabel('Частота')
 plt.grid(True)
 plt.show()
 
-# 2
+# Задание 2
 
 points = 50  # Количество точек
 x = np.random.rand(points)  # X
