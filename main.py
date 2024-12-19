@@ -1,12 +1,17 @@
-import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib.animation as animation
+import matplotlib.pyplot as plt
 
-x = np.linspace(-100, 100, 100000)
-y = x ** 64
+# Параметры нормального распределения
+mean = 0  # Среднее значение
+std_dev = 1  # Стандартное отклонение
+num_samples = 10000  # Количество образцов
 
-plt.plot(x,y)
-plt.title('График: y = x ** 2')
+data = np.random.normal(mean, std_dev, num_samples)
+
+#plt.figure(figsize=(8, 6))
+plt.hist(data, bins=50, edgecolor='black', alpha=0.7)
+plt.title('Гистограмма')
+plt.xlabel('Значение')
+plt.ylabel('Частота')
 plt.grid(True)
-
 plt.show()
